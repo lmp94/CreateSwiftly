@@ -45,6 +45,7 @@ extension ArrayFunction {
   
   
 }
+
 // MARK: - Common Functions: append, remove, iterate
 
 extension ArrayFunctions {

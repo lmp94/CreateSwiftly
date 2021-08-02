@@ -535,7 +535,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 98A56828267BDD5900D8CCAD /* Build configuration list for PBXProject "CreateSwiftly" */;
+			buildConfigurationList = 98A56828267BDD5900D8CCAD /* Build configuration list for PBXProject "CodeSwiftly" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -975,7 +975,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98A56828267BDD5900D8CCAD /* Build configuration list for PBXProject "CreateSwiftly" */ = {
+		98A56828267BDD5900D8CCAD /* Build configuration list for PBXProject "CodeSwiftly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98A56858267BDD5A00D8CCAD /* Debug */,
