@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class ArrayFunctions {
+class ArrayFunctions {
     
     // MARK:- Private Class Scoped Values
     
@@ -17,31 +17,37 @@ final class ArrayFunctions {
     private var emptyInts = [Int]()
     private var threeDoubles: [Double] = [0.0, 0.0, 0.0]
     
-    // MARK: - Array Manipulation (Filter, Map, Reduce)
-    
-    
-    // MARK: Map (Array)
-    // Reduces bolierplate code i.e. creating "holder functions" while doing comptation
-    // *ANY* collection i.e. dictionary, sets, etc.
-    
-    func maps() {
-        let values = [1, 4, 5, 6, 7]
+}
 
-        // Standard Map: iterates through *any* collection & applies the same operation to each element
-        let double = values.map{ $0 * 2 }
-        
-        // Flat Map
-        let map = values.fla
-        // Compact Map
-        
-    }
+// MARK: - Array Manipulation (Filter, Map, Reduce)
+
+extension ArrayFunction {
+  // MARK: Map (Array)
+  // Reduces bolierplate code i.e. creating "holder functions" while doing comptation
+  // *ANY* collection i.e. dictionary, sets, etc.
+  
+  func maps() {
+    let values = [1, 4, 5, 6, 7]
     
-    func filter() {
-        // Loop over collection & return a collection only containing those elements that satisfy the condition i.e. even only
-        let values = [1, 4, 5, 6, 7]
-    }
+    // Standard Map: iterates through *any* collection & applies the same operation to each element
+    let double = values.map{ $0 * 2 }
     
-    // MARK: - Common Functions: append, remove, iterate
+    // Flat Map
+    let map = values.fla
+    // Compact Map
+    
+  }
+  
+  func filter() {
+    // Loop over collection & return a collection only containing those elements that satisfy the condition i.e. even only
+    let values = [1, 4, 5, 6, 7]
+  }
+  
+  
+}
+// MARK: - Common Functions: append, remove, iterate
+
+extension ArrayFunctions {
     
     func append() {
         let threeDoubles = Array(repeating: 0.0, count: 3)
