@@ -26,24 +26,8 @@ class ArrayFunctions {
 /// implemented lazily.
 
 extension ArrayFunctions {
-  // MARK: Map (Array)
   // Reduces bolierplate code i.e. creating "holder functions" while doing comptation
   // *ANY* collection i.e. dictionary, sets, etc.
-  
-  func mapExample() {
-    let values = [1, 4, 5, 6, 7]
-    
-    // Standard Map: iterates through *any* collection & applies the same operation to each element
-    let double = values.map{ $0 * 2 }
-    print (double)
-    // Flat Map
-    // Compact Map
-    
-    let a = values.compactMap { Int in
-      <#code#>
-    }
-    
-  }
 
   // Note: flatmap is deparriciated
   func mapExamples() {
@@ -70,7 +54,6 @@ extension ArrayFunctions {
     let shortNames = names.filter { $0.count < 5 }
     print(shortNames)
   }
-  
   
 }
 
