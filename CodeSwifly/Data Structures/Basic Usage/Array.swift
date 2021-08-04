@@ -21,26 +21,54 @@ class ArrayFunctions {
 
 // MARK: - Array Manipulation (Filter, Map, Reduce)
 
-extension ArrayFunction {
+/// A sequence containing the same elements as this sequence,
+/// but on which some operations, such as `map` and `filter`, are
+/// implemented lazily.
+
+extension ArrayFunctions {
   // MARK: Map (Array)
   // Reduces bolierplate code i.e. creating "holder functions" while doing comptation
   // *ANY* collection i.e. dictionary, sets, etc.
   
-  func maps() {
+  func mapExample() {
     let values = [1, 4, 5, 6, 7]
     
     // Standard Map: iterates through *any* collection & applies the same operation to each element
     let double = values.map{ $0 * 2 }
-    
+    print (double)
     // Flat Map
-    let map = values.fla
     // Compact Map
     
+    let a = values.compactMap { Int in
+      <#code#>
+    }
+    
+  }
+
+  // Note: flatmap is deparriciated
+  func mapExamples() {
+    // non-optional values to transform
+    let values = ["1", "2", "cat", "dog"]
+    let mapping: [Int?] = values.map { str in Int(str) }
+    // [1, 2, nil, nil]
+    
+    /// Complexity: O(*m* + *n*), where *n* is the length of this sequence
+    ///   and *m* is the length of the result.
+    let compact: [Int] = values.compactMap { str in Int(str) }
+    // [1, 2] creates an arrya without any nil items
+    
+    print("Values: \(values), Map: \(mapping), Compact Map: \(compact)")
   }
   
-  func filter() {
-    // Loop over collection & return a collection only containing those elements that satisfy the condition i.e. even only
+  // Loop over collection & return a collection only containing those elements that satisfy the condition i.e. even only
+  func filterExample() {
     let values = [1, 4, 5, 6, 7]
+    let even = values.filter { $0 % 2 == 0 }
+    print(even)
+        
+    let names = ["Vivien", "Marlon", "Kim", "Karl"]
+    let shortNames = names.filter { $0.count < 5 }
+    print(shortNames)
   }
   
   
