@@ -10,8 +10,9 @@ import Foundation
 
 final class SetFunctions {
   var letters = Set<Character>()
+  var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
   
-  // MARK: - Basic Common Functions
+  // MARK: - Basic Common Functions (insert, remove, contains)
   
   func functionsAllowed() {
     letters.insert("a")
@@ -19,7 +20,6 @@ final class SetFunctions {
     // Empty
     letters = []
     
-    var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
     
     if favoriteGenres.isEmpty {
       favoriteGenres.insert("Jazz")
@@ -41,9 +41,10 @@ final class SetFunctions {
     }
   }
   
+  // MARK: - Iterations
+  
   func itereation() {
-    let favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
-    
+    // TODO add time complexity if its isn't a simplist O(n)
     for genre in favoriteGenres {
       print("\(genre)")
     }
@@ -53,7 +54,7 @@ final class SetFunctions {
     }
   }
   
-  // MARK: - Set Operations
+  // MARK: - Operations
   
   func operations() {
     let oddDigits: Set = [1, 3, 5, 7, 9]
@@ -63,21 +64,25 @@ final class SetFunctions {
     // Note: Everything below returns a new set
     
     // All of the values in both sets
-    let union = oddDigits.union(evenDigits).sorted() // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let union = oddDigits.union(evenDigits).sorted()
+    // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     // Sorted Complexity: O(*n* log *n*), where *n* is the length of the sequence.
     print (union)
     
     // common to both sets
-    let inersection = oddDigits.intersection(evenDigits).sorted() // []
+    let inersection = oddDigits.intersection(evenDigits).sorted()
+    // []
     print(inersection)
     
     // values not in the specified set
-    let subtracting = oddDigits.subtracting(singleDigitPrimeNumbers).sorted() // [1, 9]
+    let subtracting = oddDigits.subtracting(singleDigitPrimeNumbers).sorted()
+    // [1, 9]
     print(subtracting)
     
     // what values are not shared between the two sets
     // vales not specified in the set
-    let symmetricDifference = oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted() // [1, 2, 9]
+    let symmetricDifference = oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
+    // [1, 2, 9]
     print(symmetricDifference)
   }
   
