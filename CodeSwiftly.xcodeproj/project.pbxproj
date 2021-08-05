@@ -41,6 +41,8 @@
 		98A56900267BE27E00D8CCAD /* 3Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A568FE267BE27E00D8CCAD /* 3Sum.swift */; };
 		98AF8C1226A9DDED00AB440A /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF8C1126A9DDED00AB440A /* Price.swift */; };
 		98AF8C1826AA14DD00AB440A /* LFU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AF8C1726AA14DD00AB440A /* LFU.swift */; };
+		98BB99D226BCA30F00FA43CF /* IACODataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB99D026BCA30F00FA43CF /* IACODataModel.swift */; };
+		98BB99D326BCA30F00FA43CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB99D126BCA30F00FA43CF /* ViewController.swift */; };
 		98D304CD26824FB700D104CF /* LRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D304CC26824FB700D104CF /* LRU.swift */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +104,8 @@
 		98A568FE267BE27E00D8CCAD /* 3Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3Sum.swift; sourceTree = "<group>"; };
 		98AF8C1126A9DDED00AB440A /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		98AF8C1726AA14DD00AB440A /* LFU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFU.swift; sourceTree = "<group>"; };
+		98BB99D026BCA30F00FA43CF /* IACODataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IACODataModel.swift; sourceTree = "<group>"; };
+		98BB99D126BCA30F00FA43CF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98D304CC26824FB700D104CF /* LRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRU.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,8 +150,6 @@
 				98A5689A267BE06400D8CCAD /* Stack.swift */,
 				98A5689B267BE06400D8CCAD /* HashTable.swift */,
 				98A5689D267BE06400D8CCAD /* Queue.swift */,
-				98D304CC26824FB700D104CF /* LRU.swift */,
-				98AF8C1726AA14DD00AB440A /* LFU.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -175,9 +177,9 @@
 		98A5682F267BDD5900D8CCAD /* CodeSwifly */ = {
 			isa = PBXGroup;
 			children = (
-				98D304C826824FA900D104CF /* Interview Questoins */,
-				98A568FC267BE10F00D8CCAD /* Algorithms  */,
+				98BB99CE26BCA27300FA43CF /* iOS Basics */,
 				98A56875267BE01A00D8CCAD /* Data Structures */,
+				98BB99CD26BCA22800FA43CF /* Non Refined */,
 				98A56874267BDFFA00D8CCAD /* Leet Code */,
 				98A56830267BDD5900D8CCAD /* AppDelegate.swift */,
 				98A56832267BDD5900D8CCAD /* SceneDelegate.swift */,
@@ -249,6 +251,7 @@
 		98A56874267BDFFA00D8CCAD /* Leet Code */ = {
 			isa = PBXGroup;
 			children = (
+				98A568FC267BE10F00D8CCAD /* Algorithms  */,
 				98A56871267BDF2D00D8CCAD /* Numeric */,
 				98A56872267BDFC500D8CCAD /* Strings */,
 				98A56873267BDFDF00D8CCAD /* Linked Lists */,
@@ -295,14 +298,33 @@
 			path = "Algorithms ";
 			sourceTree = "<group>";
 		};
-		98D304C826824FA900D104CF /* Interview Questoins */ = {
+		98BB99CD26BCA22800FA43CF /* Non Refined */ = {
 			isa = PBXGroup;
 			children = (
 				989F498B26A008FD002AFF34 /* Networking.swift */,
-				989F499026A00907002AFF34 /* Concurrency.swift */,
 				98AF8C1126A9DDED00AB440A /* Price.swift */,
+				98AF8C1726AA14DD00AB440A /* LFU.swift */,
+				98D304CC26824FB700D104CF /* LRU.swift */,
 			);
-			path = "Interview Questoins";
+			path = "Non Refined";
+			sourceTree = "<group>";
+		};
+		98BB99CE26BCA27300FA43CF /* iOS Basics */ = {
+			isa = PBXGroup;
+			children = (
+				98BB99CF26BCA2BE00FA43CF /* API Fetching Basics */,
+				989F499026A00907002AFF34 /* Concurrency.swift */,
+			);
+			path = "iOS Basics";
+			sourceTree = "<group>";
+		};
+		98BB99CF26BCA2BE00FA43CF /* API Fetching Basics */ = {
+			isa = PBXGroup;
+			children = (
+				98BB99D026BCA30F00FA43CF /* IACODataModel.swift */,
+				98BB99D126BCA30F00FA43CF /* ViewController.swift */,
+			);
+			path = "API Fetching Basics";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,9 +462,11 @@
 				98A568B9267BE06400D8CCAD /* HashTable.swift in Sources */,
 				98A5686F267BDF2200D8CCAD /* FirstUnqiueCharacter.swift in Sources */,
 				98A568BC267BE06400D8CCAD /* Set.swift in Sources */,
+				98BB99D226BCA30F00FA43CF /* IACODataModel.swift in Sources */,
 				98A568C2267BE06400D8CCAD /* BFS.swift in Sources */,
 				98D304CD26824FB700D104CF /* LRU.swift in Sources */,
 				98A56900267BE27E00D8CCAD /* 3Sum.swift in Sources */,
+				98BB99D326BCA30F00FA43CF /* ViewController.swift in Sources */,
 				98A568C3267BE06400D8CCAD /* Fib.swift in Sources */,
 				98A568C0267BE06400D8CCAD /* Graph.swift in Sources */,
 				98A56866267BDF1400D8CCAD /* LinkedListBase.swift in Sources */,

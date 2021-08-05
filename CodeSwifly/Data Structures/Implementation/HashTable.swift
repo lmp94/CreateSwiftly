@@ -13,15 +13,15 @@ import Foundation
 // Better performance, loaded on to the Stack
 public struct HashTable<Key: Hashable, Value> {
   /**
-    The index each "bucket" is at determined by
-        what index is returned when applying the
-        hash function. If there are collision,
-        simply add them to the Bucket at the index
-        of Buckets.
+   The index each "bucket" is at determined by
+   what index is returned when applying the
+   hash function. If there are collision,
+   simply add them to the Bucket at the index
+   of Buckets.
    */
   
   private typealias Element = (key: Key, value: Value)
-  private typealias Bucket: [Element] = [:]
+  private typealias Bucket = [Element]
   
   private var buckets: [Bucket]
   
@@ -49,8 +49,8 @@ public struct HashTable<Key: Hashable, Value> {
   }
   
   /**
-     Takes in a Key object and returns a value for a given key if it exists.
-     Returns nil when the item is not in the hash table.
+   Takes in a Key object and returns a value for a given key if it exists.
+   Returns nil when the item is not in the hash table.
    */
   // TODO: naming
   public func value(forKey key: Key) -> Value? {
@@ -64,17 +64,17 @@ public struct HashTable<Key: Hashable, Value> {
   }
   
   // TODO read up on discardableResult
-
+  
   /**
-    Takes a key and value, updating the value in the hashtabl
-      with the value passed in for the given key.
+   Takes a key and value, updating the value in the hashtabl
+   with the value passed in for the given key.
    
-    Returns the previous value that was being overriden if the
-      key exisits in the HashTable, if not, return nil
-      to indicate
+   Returns the previous value that was being overriden if the
+   key exisits in the HashTable, if not, return nil
+   to indicate
    
-     Returns nil when the item is not in the hash
-      table. TODO: why this seems strange
+   Returns nil when the item is not in the hash
+   table. TODO: why this seems strange
    */
   @discardableResult public mutating func updateValue(_ value: Value,
                                                       forKey: Key) -> Value? {
@@ -91,13 +91,13 @@ public struct HashTable<Key: Hashable, Value> {
     } // for
     
     // isn’t in it, add.
-
+    
     return nil
   }
   
   /**
-      Private helper function to make sure that entries
-        added are correctly accounted for.
+   Private helper function to make sure that entries
+   added are correctly accounted for.
    */
   
   // TODO could we override the append function / do this more swiftly?

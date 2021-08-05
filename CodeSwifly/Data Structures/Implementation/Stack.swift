@@ -11,9 +11,9 @@ import Foundation
 // TODO: linked list implementation?
 
 /**
-  Array implementation of a stck
-    Last-in first-out stack (LIFO)
-    Push and pop are O(1) operations.
+ Array implementation of a stck
+ Last-in first-out stack (LIFO)
+ Push and pop are O(1) operations.
  */
 public struct Stack<T> {
   fileprivate var array = [T]()

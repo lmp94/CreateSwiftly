@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ArrayFunctions {
   
@@ -24,6 +25,7 @@ class ArrayFunctions {
   // MARK: - Common Functions: append, remove, iterate
   
   func append() {
+    
     // Insertions
     /// Because arrays increase their allocated capacity
     /// using an exponential strategy,
@@ -80,7 +82,7 @@ class ArrayFunctions {
   
 }
 
-// MARK: - Array Manipulation (Filter, Map, Reduce)
+// MARK: - Array Manipulation - Higher Order (Filter, Map, Reduce)
 
 /// A sequence containing the same elements as this sequence,
 /// but on which some operations, such as `map` and `filter`, are
